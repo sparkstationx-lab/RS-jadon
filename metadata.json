@@ -1,0 +1,6 @@
+{
+  "name": "RS PHARMA ",
+  "description": "Wholesale Pharmaceutical Distributor supplying hospital-grade formulations, critical care, plasma, and specialty therapeutics across India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
