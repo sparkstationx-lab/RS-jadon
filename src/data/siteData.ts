@@ -7,7 +7,7 @@ export const FAQS: FAQItem[] = [
   },
   {
     "question": "Do you deliver across India?",
-    "answer": "Yes, RS PHARMA  operates certified, highly responsive climate-controlled logistical hubs and partners with domestic air freight lines to deliver essential medical shipments safely and swiftly to all states across India."
+    "answer": "Yes, RS JADON  operates certified, highly responsive climate-controlled logistical hubs and partners with domestic air freight lines to deliver essential medical shipments safely and swiftly to all states across India."
   },
   {
     "question": "How can I request a quotation?",
@@ -18,15 +18,15 @@ export const FAQS: FAQItem[] = [
     "answer": "Yes, we are a fully registered corporate wholesale drug distributor eligible for government, military, and institutional healthcare supply procurement contracts."
   },
   {
-    "question": "What licensing is required to order from RS PHARMA ?",
-    "answer": "To purchase controlled bulk pharmaceuticals from RS PHARMA , clients must present a valid Drug License (Form 20B/21B or regional equivalent) alongside active GST registration."
+    "question": "What licensing is required to order from RS JADON ?",
+    "answer": "To purchase controlled bulk pharmaceuticals from RS JADON , clients must present a valid Drug License (Form 20B/21B or regional equivalent) alongside active GST registration."
   }
 ];
 export const TIMELINE: TimelineItem[] = [
   {
     "year": "2018",
     "title": "Founding & Licensing",
-    "description": "RS PHARMA  was established with a certified wholesale license, partnering with top-tier global pharmaceutical manufacturers."
+    "description": "RS JADON  was established with a certified wholesale license, partnering with top-tier global pharmaceutical manufacturers."
   },
   {
     "year": "2020",
@@ -135,7 +135,7 @@ export const FORMS = [
 ];
 
 export const CONTACT_INFO = {
-  companyName: 'RS PHARMA ',
+  companyName: 'RS JADON ',
   phone: '+91 88106 60831',
   whatsapp: '918810660831',
   email: 'sales@rspharmaindia.com',

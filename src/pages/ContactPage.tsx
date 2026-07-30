@@ -44,7 +44,7 @@ export function ContactPage() {
     >
       <SEOHead
         title="Contact Us & Wholesale Inquiry"
-        description="Contact RS PHARMA  for wholesale drug inquiries, cold-chain distribution partnerships, and hospital supply agreements. Phone: +91 88106 60831."
+        description="Contact RS JADON  for wholesale drug inquiries, cold-chain distribution partnerships, and hospital supply agreements. Phone: +91 88106 60831."
       />
 
       {/* Hero Header */}
@@ -73,7 +73,7 @@ export function ContactPage() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6 font-display text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-harmony-cream"
           >
-            Contact RS PHARMA 
+            Contact RS JADON 
           </motion.h1>
 
           <motion.p
@@ -145,7 +145,7 @@ export function ContactPage() {
 
                 {/* WhatsApp Card */}
                 <a
-                  href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=${encodeURIComponent('Hello RS PHARMA , I would like to make an inquiry.')}`}
+                  href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=${encodeURIComponent('Hello RS JADON , I would like to make an inquiry.')}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-4 p-4 rounded-2xl bg-emerald-50 hover:bg-emerald-100/70 border border-emerald-200 transition-all group"
@@ -209,7 +209,7 @@ export function ContactPage() {
                   Submit a B2B Wholesale Inquiry
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600">
-                  Fill out the form below to receive a formal wholesale quote, catalog price list, or distribution terms for RS PHARMA .
+                  Fill out the form below to receive a formal wholesale quote, catalog price list, or distribution terms for RS JADON .
                 </p>
               </div>
 
@@ -226,7 +226,7 @@ export function ContactPage() {
                       Inquiry Submitted Successfully
                     </h3>
                     <p className="text-xs text-emerald-800 max-w-md mx-auto leading-relaxed">
-                      Thank you for contacting RS PHARMA . Our sales and clinical dispatch team has received your message and will get back to you within 2 to 4 business hours.
+                      Thank you for contacting RS JADON . Our sales and clinical dispatch team has received your message and will get back to you within 2 to 4 business hours.
                     </p>
                     <button
                       onClick={() => setSubmitted(false)}

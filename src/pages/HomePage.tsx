@@ -70,7 +70,7 @@ export function HomePage() {
             viewport={{ once: true, margin: '-100px' }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 auto-rows-auto"
           >
-            {/* Bento Card 1: About RS PHARMA  */}
+            {/* Bento Card 1: About RS JADON  */}
             <motion.div
               id="bento-card-about"
               variants={itemVariants}
@@ -89,17 +89,17 @@ export function HomePage() {
 
                 <div className="space-y-3">
                   <h3 className="text-2xl sm:text-3xl font-extrabold text-harmony-dark font-display group-hover:text-harmony-teal transition-colors">
-                    About RS PHARMA 
+                    About RS JADON 
                   </h3>
                   <p className="text-harmony-dark/85 text-sm sm:text-base leading-relaxed font-normal">
-                    RS PHARMA  operates as an established, regulated pharmaceutical wholesale partner supplying hospital-grade formulations, critical care, plasma, and specialty therapeutics across India.
+                    RS JADON  operates as an established, regulated pharmaceutical wholesale partner supplying hospital-grade formulations, critical care, plasma, and specialty therapeutics across India.
                   </p>
                 </div>
 
                 <div className="relative rounded-2xl overflow-hidden aspect-16/9 border border-harmony-teal/15 shadow-inner">
                   <img
                     src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=800&q=80"
-                    alt="RS PHARMA  modern sterile laboratory equipment"
+                    alt="RS JADON  modern sterile laboratory equipment"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -232,7 +232,7 @@ export function HomePage() {
                 Featured Critical Care Therapeutics
               </h2>
               <p className="text-harmony-dark/80 text-sm sm:text-base font-normal">
-                Direct wholesale pricing on high-volume ICU, plasma, and specialty formulations supplied by RS PHARMA  and Senores Pharmaceuticals Limited.
+                Direct wholesale pricing on high-volume ICU, plasma, and specialty formulations supplied by RS JADON  and Senores Pharmaceuticals Limited.
               </p>
             </div>
             <Link
@@ -248,7 +248,7 @@ export function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {featuredProducts.map((product) => {
               const whatsappMsg = encodeURIComponent(
-                `Hello RS PHARMA , I would like to inquire about wholesale order for ${product.brandName} (${product.description}). Please confirm current stock and dispatch timeline.`
+                `Hello RS JADON , I would like to inquire about wholesale order for ${product.brandName} (${product.description}). Please confirm current stock and dispatch timeline.`
               );
 
               return (

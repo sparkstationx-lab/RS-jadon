@@ -10,12 +10,12 @@ export function SEOHead({ title, description }: SEOHeadProps) {
   const location = useLocation();
 
   useEffect(() => {
-    const defaultTitle = 'RS PHARMA  - Wholesale Pharmaceutical Distributor';
-    const siteTitle = title ? `${title} | RS PHARMA ` : defaultTitle;
+    const defaultTitle = 'RS JADON  - Wholesale Pharmaceutical Distributor';
+    const siteTitle = title ? `${title} | RS JADON ` : defaultTitle;
     document.title = siteTitle;
 
     const metaDescriptionStr = description || 
-      'RS PHARMA  operates as an established, regulated pharmaceutical wholesale partner supplying hospital-grade formulations, critical care, plasma, and specialty therapeutics across India.';
+      'RS JADON  operates as an established, regulated pharmaceutical wholesale partner supplying hospital-grade formulations, critical care, plasma, and specialty therapeutics across India.';
 
     // Update meta description
     let metaDesc = document.querySelector('meta[name="description"]');
@@ -51,7 +51,7 @@ export function SEOHead({ title, description }: SEOHeadProps) {
     setMetaTag('og:description', metaDescriptionStr);
     setMetaTag('og:type', 'website');
     setMetaTag('og:url', window.location.href);
-    setMetaTag('og:site_name', 'RS PHARMA ');
+    setMetaTag('og:site_name', 'RS JADON ');
 
     setTwitterTag('twitter:card', 'summary_large_image');
     setTwitterTag('twitter:title', siteTitle);
@@ -69,8 +69,8 @@ export function SEOHead({ title, description }: SEOHeadProps) {
     schemaScript.textContent = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'MedicalBusiness',
-      'name': 'RS PHARMA ',
-      'alternateName': 'RS PHARMA  Wholesale',
+      'name': 'RS JADON ',
+      'alternateName': 'RS JADON  Wholesale',
       'description': metaDescriptionStr,
       'url': window.location.origin,
       'telephone': '+918810660831',

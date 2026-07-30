@@ -33,7 +33,7 @@ export function ProductDetailPage() {
 
   const handleWhatsAppInquiry = () => {
     if (!product) return;
-    const text = `Hello RS PHARMA , I would like to place an order inquiry for:
+    const text = `Hello RS JADON , I would like to place an order inquiry for:
 *Product:* ${product.brandName}
 *Formulation:* ${product.description}
 *Strength:* ${product.strength}
@@ -89,7 +89,7 @@ Please confirm stock availability and dispatch timeline.`;
     >
       <SEOHead
         title={`${product.brandName} (${product.strength}) - Wholesale Rate`}
-        description={`Order ${product.brandName} (${product.description}) at wholesale price ₹${product.wholesalePrice} from RS PHARMA . CDSCO verified batch distribution.`}
+        description={`Order ${product.brandName} (${product.description}) at wholesale price ₹${product.wholesalePrice} from RS JADON . CDSCO verified batch distribution.`}
       />
 
       {/* Breadcrumbs */}

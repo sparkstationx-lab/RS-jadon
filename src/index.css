@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #05668d;
+  --color-primary-hover: #028090;
+
+  --color-harmony-dark: #000000;
+  --color-harmony-teal: #028090;
+  --color-harmony-mint: #00a896;
+  --color-harmony-turquoise: #02c39a;
+  --color-harmony-cream: #f0f3bd;
+  --color-harmony-bg: #fafde4;
+  --color-harmony-card: #fdfff2;
+
+  --color-slate-400: #2b2b2b;
+  --color-slate-500: #1c1c1c;
+  --color-slate-600: #141414;
+  --color-slate-800: #000000;
+  --color-slate-900: #000000;
+  --color-slate-950: #000000;
+}
+
+.bg-grid-pattern {
+  background-color: #e0f2fe;
+  background-image: linear-gradient(90deg, rgba(5, 102, 141, 0.09) 1px, transparent 1px),
+    linear-gradient(rgba(5, 102, 141, 0.09) 1px, transparent 1px);
+  background-size: 50px 50px;
+  border: 1px solid rgba(5, 102, 141, 0.15);
+  border-radius: 2.5rem;
+  box-shadow: 0 20px 40px -15px rgba(5, 102, 141, 0.08), 0 10px 20px -10px rgba(5, 102, 141, 0.04);
+}
+

@@ -22,7 +22,7 @@ export function NotFoundPage() {
           <span className="text-4xl font-extrabold text-harmony-teal font-display">404</span>
           <h1 className="text-2xl font-extrabold text-harmony-dark font-display">Page Not Found</h1>
           <p className="text-xs text-slate-600 leading-relaxed">
-            The page you are searching for does not exist or has been relocated within the RS PHARMA  directory.
+            The page you are searching for does not exist or has been relocated within the RS JADON  directory.
           </p>
         </div>
 

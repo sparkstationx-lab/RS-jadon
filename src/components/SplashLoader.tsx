@@ -37,7 +37,7 @@ export function SplashLoader({ onComplete }: SplashLoaderProps) {
 
             <div className="text-center">
               <h1 className="text-2xl sm:text-3xl font-bold tracking-tight font-display text-white">
-                RS PHARMA 
+                RS JADON 
               </h1>
               <p className="text-xs text-harmony-cream/80 uppercase tracking-widest font-semibold mt-1">
                 Healthcare Distribution

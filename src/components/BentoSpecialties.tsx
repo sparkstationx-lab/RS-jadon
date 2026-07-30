@@ -92,7 +92,7 @@ export function BentoSpecialties() {
           <span>Core Service Advantages</span>
         </div>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-harmony-dark tracking-tight font-display leading-tight">
-          Why Hospitals & Pharmacies Choose RS PHARMA 
+          Why Hospitals & Pharmacies Choose RS JADON 
         </h2>
         <p className="text-harmony-dark/85 text-sm sm:text-base font-normal max-w-2xl mx-auto">
           We combine direct manufacturer pricing, active cold chain protection, and rigorous drug compliance into a reliable, friction-free wholesale partner.

@@ -67,7 +67,7 @@ export function Navbar() {
             </motion.div>
             <div className="flex flex-col">
               <span className="font-display font-bold text-xl tracking-tight text-white group-hover:text-harmony-cream transition-colors duration-300">
-                RS PHARMA 
+                RS JADON 
               </span>
               <span className="text-[10px] text-harmony-cream/90 font-bold tracking-wider uppercase -mt-0.5">
                 Healthcare Distribution

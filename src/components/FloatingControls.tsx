@@ -24,7 +24,7 @@ export function FloatingControls() {
   };
 
   const whatsappMessage = encodeURIComponent(
-    'Hello RS PHARMA , I would like to inquire about wholesale pharmaceutical orders and product catalog availability.'
+    'Hello RS JADON , I would like to inquire about wholesale pharmaceutical orders and product catalog availability.'
   );
 
   return (

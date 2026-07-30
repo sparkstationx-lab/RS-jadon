@@ -16,8 +16,8 @@ export function AboutPage() {
       className="space-y-0"
     >
       <SEOHead
-        title="About RS PHARMA  - Licensed Pharmaceutical Wholesaler"
-        description="Learn about RS PHARMA , a CDSCO-licensed pharmaceutical distributor supplying hospital-grade critical care, plasma therapeutics, and WHO-GDP compliant cold-chain distribution across India."
+        title="About RS JADON  - Licensed Pharmaceutical Wholesaler"
+        description="Learn about RS JADON , a CDSCO-licensed pharmaceutical distributor supplying hospital-grade critical care, plasma therapeutics, and WHO-GDP compliant cold-chain distribution across India."
       />
 
       {/* Hero Header */}
@@ -55,7 +55,7 @@ export function AboutPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-slate-300 text-base sm:text-lg font-normal leading-relaxed"
           >
-            RS PHARMA  serves as a primary pharmaceutical distribution channel, ensuring authentic, cold-chain compliant therapeutics reach hospitals, clinics, and pharmacies with zero delay.
+            RS JADON  serves as a primary pharmaceutical distribution channel, ensuring authentic, cold-chain compliant therapeutics reach hospitals, clinics, and pharmacies with zero delay.
           </motion.p>
         </div>
       </section>
@@ -72,7 +72,7 @@ export function AboutPage() {
               Built on Integrity, Driven by Quality
             </h2>
             <p className="text-harmony-dark/85 text-sm sm:text-base leading-relaxed">
-              Founded with a commitment to bridge manufacturing excellence with critical healthcare delivery, RS PHARMA  operates state-of-the-art WHO-GDP compliant warehousing facilities in Gwalior, Madhya Pradesh.
+              Founded with a commitment to bridge manufacturing excellence with critical healthcare delivery, RS JADON  operates state-of-the-art WHO-GDP compliant warehousing facilities in Gwalior, Madhya Pradesh.
             </p>
             <p className="text-harmony-dark/80 text-sm leading-relaxed">
               We hold official distribution relationships with leading international biopharmaceutical brands, including Senores Pharmaceuticals Limited and Concord Biotech (INCA), ensuring seamless access to high-demand ICU therapeutics, antifungals, and plasma products.
@@ -97,7 +97,7 @@ export function AboutPage() {
           <div className="relative rounded-3xl overflow-hidden border border-harmony-teal/20 shadow-xl aspect-4/3">
             <img
               src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1000&q=80"
-              alt="RS PHARMA  distribution warehouse"
+              alt="RS JADON  distribution warehouse"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
             />
@@ -148,7 +148,7 @@ export function AboutPage() {
               Regulatory Badges & Licensing
             </h2>
             <p className="text-sm text-slate-300">
-              RS PHARMA  maintains strict adherence to CDSCO standards, wholesale licensing laws, and DSCA guidelines.
+              RS JADON  maintains strict adherence to CDSCO standards, wholesale licensing laws, and DSCA guidelines.
             </p>
           </div>
 

@@ -53,7 +53,7 @@ export function ProductsPage() {
   }, [filteredProducts, displayLimit]);
 
   const handleWhatsAppInquiry = (product: Product, quantity = 1) => {
-    const text = `Hello RS PHARMA , I would like to place an order inquiry for:
+    const text = `Hello RS JADON , I would like to place an order inquiry for:
 *Product:* ${product.brandName}
 *Formulation:* ${product.description}
 *Packaging:* ${product.packaging}
@@ -76,7 +76,7 @@ Please confirm stock availability and dispatch timeline.`;
     >
       <SEOHead
         title="Wholesale Product Catalog"
-        description="Explore 190+ WHO-GMP certified pharmaceutical formulations, ICU plasma, specialty therapeutics, and antibiotics at direct wholesale pricing from RS PHARMA ."
+        description="Explore 190+ WHO-GMP certified pharmaceutical formulations, ICU plasma, specialty therapeutics, and antibiotics at direct wholesale pricing from RS JADON ."
       />
 
       {/* Header Banner */}
@@ -89,7 +89,7 @@ Please confirm stock availability and dispatch timeline.`;
             Wholesale Pharmaceutical Directory
           </h1>
           <p className="text-slate-300 text-sm sm:text-base font-normal leading-relaxed">
-            Factory-direct pricing on ICU, plasma formulations, critical care, and broad-spectrum antibiotics supplied by RS PHARMA  and Senores Pharmaceuticals Limited.
+            Factory-direct pricing on ICU, plasma formulations, critical care, and broad-spectrum antibiotics supplied by RS JADON  and Senores Pharmaceuticals Limited.
           </p>
         </div>
       </div>

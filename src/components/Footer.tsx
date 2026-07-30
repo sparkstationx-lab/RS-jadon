@@ -54,7 +54,7 @@ export function Footer() {
                 <Pill className="w-6 h-6 text-harmony-teal" />
               </div>
               <span className="font-display font-black text-xl tracking-tight text-white group-hover:text-harmony-turquoise transition-colors duration-200">
-                RS PHARMA 
+                RS JADON 
               </span>
             </Link>
             <p className="text-sm text-harmony-cream/80 leading-relaxed font-normal">
@@ -92,7 +92,7 @@ export function Footer() {
                   className="text-harmony-cream/75 hover:text-harmony-turquoise transition-colors duration-200 flex items-center gap-2"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-harmony-turquoise/40" />
-                  <span>About RS PHARMA </span>
+                  <span>About RS JADON </span>
                 </Link>
               </li>
               <li>
@@ -170,7 +170,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-harmony-teal/20 text-center text-xs text-harmony-cream/65 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© {currentYear} RS PHARMA . All rights reserved.</p>
+          <p>© {currentYear} RS JADON . All rights reserved.</p>
           <p className="text-harmony-cream/65 bg-slate-950/40 px-3.5 py-1.5 rounded-full border border-harmony-teal/15">
             Pharmaceutical Distributor License No:{' '}
             <span className="font-mono text-harmony-cream font-bold">
