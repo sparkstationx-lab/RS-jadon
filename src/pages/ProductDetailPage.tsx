@@ -1,10 +1,28 @@
 import { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { MessageCircle, Share2, Check, ArrowLeft, ShieldCheck, Truck, Clock, Package, Building2, ChevronRight, AlertTriangle } from 'lucide-react';
+import {
+  MessageCircle,
+  Share2,
+  Check,
+  ArrowLeft,
+  ShieldCheck,
+  Truck,
+  Clock,
+  Package,
+  Building2,
+  ChevronRight,
+  AlertTriangle,
+  Stethoscope,
+  Activity,
+  CheckCircle2,
+  FileText,
+  Pill,
+} from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
 import { PRODUCTS } from '../data/products';
 import { CONTACT_INFO } from '../data/siteData';
+import { getTreatmentInfo } from '../utils/treatmentHelper';
 
 export function ProductDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -12,6 +30,11 @@ export function ProductDetailPage() {
   const product = useMemo(() => {
     return PRODUCTS.find((p) => p.id === id);
   }, [id]);
+
+  const treatmentInfo = useMemo(() => {
+    if (!product) return null;
+    return getTreatmentInfo(product);
+  }, [product]);
 
   const [quantity, setQuantity] = useState(product ? Math.max(product.minOrderQuantity || 1, 10) : 10);
   const [copied, setCopied] = useState(false);
@@ -184,6 +207,99 @@ Please confirm stock availability and dispatch timeline.`;
               </div>
             </div>
           </div>
+
+          {/* Dedicated Treatment Info Card */}
+          {treatmentInfo && (
+            <div
+              id="treatment-info-card"
+              className="bg-harmony-card rounded-3xl border border-harmony-teal/20 p-6 sm:p-8 shadow-md space-y-6"
+            >
+              {/* Card Title Header */}
+              <div className="flex items-center justify-between pb-4 border-b border-harmony-teal/15">
+                <div className="flex items-center gap-3">
+                  <div className="p-2.5 bg-harmony-cream rounded-2xl text-harmony-teal border border-harmony-teal/20 shrink-0">
+                    <Stethoscope className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h2 className="text-xl font-extrabold text-harmony-dark font-display">
+                      Treatment Info & Medical Indications
+                    </h2>
+                    <span className="text-xs text-slate-500 font-medium">
+                      Clinical therapeutic profile & target conditions
+                    </span>
+                  </div>
+                </div>
+                <span className="hidden sm:inline-flex px-3 py-1 bg-harmony-cream/80 text-harmony-teal border border-harmony-teal/20 rounded-full text-[11px] font-bold uppercase tracking-wider">
+                  Verified Indication
+                </span>
+              </div>
+
+              {/* Primary Health Condition Callout Box */}
+              <div className="bg-harmony-bg p-5 rounded-2xl border border-harmony-teal/20 space-y-2">
+                <div className="flex items-center gap-2">
+                  <Activity className="w-4 h-4 text-harmony-teal shrink-0" />
+                  <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                    Target Health Condition / Indication
+                  </span>
+                </div>
+                <p className="text-base sm:text-lg font-extrabold text-harmony-dark font-display">
+                  {treatmentInfo.targetConditions}
+                </p>
+              </div>
+
+              {/* Detailed Clinical Usage & Mechanism */}
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-500 block">
+                  Clinical Use & Mechanism
+                </span>
+                <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
+                  {treatmentInfo.clinicalSummary}
+                </p>
+              </div>
+
+              {/* Key Specific Indications Tags */}
+              <div className="space-y-3 pt-2">
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-500 block">
+                  Specific Conditions & Symptoms Treated
+                </span>
+                <div className="flex flex-wrap gap-2">
+                  {treatmentInfo.keyIndications.map((indication, idx) => (
+                    <span
+                      key={idx}
+                      className="px-3 py-1.5 bg-harmony-bg text-harmony-dark border border-harmony-teal/20 rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-2xs"
+                    >
+                      <CheckCircle2 className="w-3.5 h-3.5 text-harmony-teal shrink-0" />
+                      <span>{indication}</span>
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Administration & Classification Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4 border-t border-harmony-teal/15">
+                <div className="p-3 bg-harmony-bg rounded-xl border border-harmony-teal/10 space-y-1">
+                  <span className="text-[11px] font-semibold text-slate-500 block">Therapeutic Class</span>
+                  <strong className="text-xs font-bold text-harmony-dark block truncate" title={treatmentInfo.therapeuticClass}>
+                    {treatmentInfo.therapeuticClass}
+                  </strong>
+                </div>
+
+                <div className="p-3 bg-harmony-bg rounded-xl border border-harmony-teal/10 space-y-1">
+                  <span className="text-[11px] font-semibold text-slate-500 block">Route of Admin</span>
+                  <strong className="text-xs font-bold text-harmony-dark block truncate" title={treatmentInfo.administrationRoute}>
+                    {treatmentInfo.administrationRoute}
+                  </strong>
+                </div>
+
+                <div className="p-3 bg-harmony-bg rounded-xl border border-harmony-teal/10 space-y-1">
+                  <span className="text-[11px] font-semibold text-slate-500 block">Prescription Status</span>
+                  <strong className="text-xs font-bold text-harmony-teal block truncate" title={treatmentInfo.prescriptionStatus}>
+                    {treatmentInfo.prescriptionStatus}
+                  </strong>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Right Column: Order Inquiry Calculator */}
